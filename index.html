@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todolist</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="head">
+    <div class="header">
+        <span class="h-left">ToDolist</span>
+        <span class="h-mid">
+            <input type="text" placeholder="添加ToDo" id="write">
+            <input type="number" placeholder="完成时长" id="time">
+        </span>
+        <span class="h-mid1">
+            <input type="text" placeholder="搜索" id="sou-suo">
+        </span>
+        <span class="sou">&#xe60a;</span>
+        <span id="jia">+</span>
+    </div>
+</div>
+<div class="nav">
+    <div class="w">
+        <div class="yi">
+            <div class="yi-nav">未完成 <span id = todocout>0</span><span class="yi-nav-after">&#xe667;</span></div>
+        </div>
+        <div class="yi-xia">
+<!--            <div class="xia">-->
+<!--                <input type="checkbox">-->
+<!--                <p>健身</p>-->
+<!--                <span class="mit" onclick = 'dao_shu(),dao2()'>1分钟</span>-->
+<!--                <span class="start-date1">开始时间</span>-->
+<!--                <span class="date">完成时间</span>-->
+<!--                <a href="JavaScript:;" class="clear">删除</a>-->
+<!--                <a href="JavaScript:;" class="start">开始</a>-->
+<!--            </div>-->
+        </div>
+        <div class="wei">
+            <div class="wei-nav">已完成 <span id = donecout>0</span><span class="wei-nav-after">&#xe667;</span></div>
+        </div>
+        <div class="wei-xia">
+<!--            <div class="xia">-->
+<!--                <input type="checkbox">-->
+<!--                <p>健身</p>-->
+<!--                <a href="JavaScript:;" class="clear">删除</a>-->
+<!--            </div>-->
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
