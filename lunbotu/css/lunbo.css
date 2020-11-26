@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+#outer{
+    width: 520px;
+    height: 333px;
+    margin: 100px auto;
+    /*padding: 10px 0;*/
+    position: relative;
+    overflow: hidden;
+    /*background-color: greenyellow;*/
+}
+#img-list{
+    position: absolute;
+    left: 0;
+
+    /*width: 2600px;*/
+
+}
+#img-list li{
+    float: left;
+    margin: 0 10px;
+}
+/*设置导航按钮*/
+#nav-btns {
+    /*开启绝对定位*/
+    position: absolute;
+    /*设置位置*/
+
+    left: 200px;
+
+    bottom: 15px;
+}
+#nav-btns a {
+    /*设置超链接浮动*/
+    float: left;
+    /*设置超链接的宽和高*/
+    width: 15px;
+    height: 15px;
+    /*设置背景颜色*/
+    background-color: red;
+    /*设置左右外边距*/
+    margin: 0 5px;
+    /*设置透明*/
+    opacity: 0.5;
+    /*兼容IE8透明*/
+    filter: alpha(opacity=50);
+}
+
+/*#nav-btns a:first-child{*/
+/*    background-color: black;*/
+/*}*/
+
+/*设置鼠标移入的效果*/
+#nav-btns a:hover {
+    background-color: black;
+}
+
+#nav-btns .on{
+    background-color: black;
+}
