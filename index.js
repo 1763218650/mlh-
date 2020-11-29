@@ -156,6 +156,13 @@ function dao_shu(i) {
     // var amit = mit[i].innerText.split('');
     all_list = loadData(); //获取本地数据
     var su = parseInt(all_list[i].time)*60;
+    var flag = 0;
+    // 判断开始的位置: i-已完成的list
+    for (var j = 0; j < all_list.length; j++) {
+        if (all_list[j].done) {
+            flag++;
+        }
+    }
     var min;
     var miao;
     var set = setInterval(fen,1000);
@@ -175,7 +182,7 @@ function dao_shu(i) {
             clearInterval(set);
             // mit.innerHTML = 0+':'+miao;
         }
-        mit[i].innerHTML = min+':'+miao;
+        mit[i-flag].innerHTML = min+':'+miao;
     }
 
 }
